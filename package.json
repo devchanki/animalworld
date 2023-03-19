@@ -1,0 +1,24 @@
+{
+  "name": "zoo-landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "start": "cd ./backend && npm start",
+    "build": "cd ./frontend && npm run build",
+    "publish": "concurrently \"npm build\" \"npm start\"",
+    "dev": "concurrently \"nodemon ./backend/bin/wwwDev\" \"cd frontend && npm start\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^3.5.1",
+    "connect-history-api-fallback": "^1.5.0",
+    "fullpage.js": "^2.9.7",
+    "mongodb": "^3.0.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.11"
+  }
+}
